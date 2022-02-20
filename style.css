@@ -1,0 +1,59 @@
+
+body{
+    background-color: antiquewhite;
+}
+
+
+.rightcar{
+    width: 200px;
+    position: absolute;
+    padding-left: 50px;
+    animation-name: car-goes-right;
+    animation-duration: 3s;
+    animation-delay: o,3ms;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    
+}
+.leftcar{
+    width: 200px;
+    padding-left: 1300px;
+    position: absolute;
+    animation-name: car-goes-left;
+    animation-duration: 3s;
+    animation-delay: 0,3ms;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes car-goes-left{
+    
+        0%{
+            padding-left: 1250px;
+        }
+        50%{
+           padding-left:1000px;
+
+        }
+        100%{
+            padding-left:750px;
+
+        }
+    
+    }
+@keyframes car-goes-right{
+    0%{
+        padding-left: 15opx;
+    }
+    50%{
+        padding-left:300px;
+    }
+    100%{
+        padding-left:550px;
+    }
+}
